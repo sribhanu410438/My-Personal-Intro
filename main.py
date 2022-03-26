@@ -21,13 +21,5 @@ def education():
 def skillset():
     return render_template ("skillset.html")
 
-@app.route('/newproject', methods=['POST'])
-def saveproject():
-    input_nopol = request.form['text_box']
-    if request.method == 'POST':
-       with open('nopol.txt', 'w') as f:
-            f.write(str(input_nopol))
-    return render_template('index.html', nopol=input_nopol)
-
 if __name__ == "__main__":
     app.run()
