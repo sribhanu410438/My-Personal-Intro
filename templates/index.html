@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sri Sushma Chowdary Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/0a38ab8407.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<header class="navbar navbar-inverse" style="border-radius: 55px;">
+        <div class="container-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar" >Home</span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style= "color: yellow; font-size: 18px;">
+                            <li><a href="{{ url_for('hello') }}" style="
+                                color: yellow;
+                                font-size: x-large;
+                                padding-top: 38px;">Home<span class="sr-only">(current)</span></a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="navbar-brand" style="color: yellow; margin-top: 10px;">Sri Sushma Chowdary</li>
+                             <br></br>
+                            <li class="navbar-brand" style="color: yellow;margin-top: -10px; margin-bottom: -10px">50300094</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<style type="text/css">
+
+    body {
+        background: url("/static/images/thumb.jpg"); 
+        display: compact; 
+        background-size: 100%;" 
+        background-repeat:no-repeat;
+    }
+
+</style>
+<body>
+    <div style="padding-top:20px">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar">Projects</span>
+              <span class="icon-bar">New Project</span>
+              <span class="icon-bar">Education</span>
+              <span class="icon-bar">Skill-Set</span>
+          </button>
+      </div>
+      <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li><a href="{{ url_for('projects') }}" style="
+                color: yellow;
+                font-size: x-large;">Project</a></li>
+              <li><a href="{{ url_for('newproject') }}" style="
+                color: yellow;
+                font-size: x-large;">New Project</a></li>
+              <li><a href="{{ url_for('education') }}" style="
+                color: yellow;
+                font-size: x-large;">Education</a></li>
+              <li><a href="{{ url_for('skillset') }}" style="
+                color: yellow;
+                font-size: x-large;">Skill Set</a></li>
+          </ul>
+      </div>
+      <div style="color: Azure; font-size:large; padding-left: 100px;">
+          <h1 style="font-family: cursive; margin-left: -15px;">Short Bio</h1>
+          <p>This is sri sushma! welcome........</p>
+      </div>
+    </div>
+</boddy>
+
+</html>
