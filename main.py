@@ -30,4 +30,4 @@ def skillset():
 #     return render_template('index.html', nopol=input_nopol)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
