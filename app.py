@@ -1,3 +1,4 @@
+from cgitb import text
 from flask import Flask, request, render_template
 app = Flask(__name__)
 
@@ -29,7 +30,7 @@ def skillset():
 
 @app.route('/newproject', methods=['POST'])
 def my_form_post():
-    input_text = request.form['usrform']
+    input_text = request.form['text_box']
     if request.method == 'POST':
         with open('newproject.txt', 'w') as f:
             f.write(str(input_text))
